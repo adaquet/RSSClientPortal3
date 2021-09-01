@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #f15a22;
+	align-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #f15a22;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.logo{
+	align-content: center;
+	max-width: 220px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.header{
+	color: white;
+	font-family: tahoma;
+	text-shadow: 1px 1px 3px black;
+}
+
+.login{
+	background-color: white;
+	max-width: 350px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 100px;
+	padding-top: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px black;
+}
+
+
+.form{
+	color: #f15a22;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 500px;
+	
+}
+
+#password{
+	margin-top: 10px;
+}
+
+.form-control{
+	background-color: lightgrey;
+	padding: 5px 5px 5px 10px;
+	max-width: 200px;
+}
+
+input{ 
+	border: none;
+	border-radius: 100px;
+	color:green!important;
+}
+
+.forgot{ 
+	color: slategrey;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.submit-btn{
+	color: white;
+	background-color: #f15a22;
+	max-width: 250px;
+	padding: 5px 15px 5px 15px;
+	margin: 25px;
+	border: none;
+	border-radius: 50px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.submit-btn:hover{
+	color: white;
+	background-color: slategray;
+	max-width: 250px;
+	padding: 5px 15px 5px 15px;
+	margin: 25px;
+	border: none;
+	border-radius: 50px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+#submit, #submit:visited{
+	style: none;
+	text-decoration: none;
+	color: white;
+}

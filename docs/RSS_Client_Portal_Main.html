@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RSS Client Portal</title>
+	<link href="RSS_Client_Portal_Main.css" rel="stylesheet" >
+	
+	
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	 <div id="page-container">
+		    <div id="content-wrap">
+
+		 
+<div class="header">
+		<img class="logo" src="Images/RSS- LONG LOGO-WHITE.png" alt="RSS Logo">
+	
+	</div>
+	
+	<div class="main">
+		<h1 class="title"><strong>CLIENT PORTAL</strong></h1>
+		<ul id="accordion">
+
+  <li>
+	  <div class="accordion" id="accordionExample">
+        
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> 
+
+              <strong>Open Calls</strong>
+            </button>
+          </h2>
+		            <div id="collapseOne" class="accordion-collapse collapse!" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+            <div class="accordion-body">
+             
+				<!-- FILTERS SECTION-->
+				
+				<strong>Filters:</strong> 
+				<br>
+				
+				<label for="search">Client PO#:</label>
+      <input type="search" class="PO" name="search" placeholder="Search PO#">
+				
+		<label for="search" class="location-label">Location:</label>
+      <input type="search" class="search" name="search" placeholder="Search Locations">
+      
+				
+			<select class="dropdown" required>
+        <option disable selected value>Service Type</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+       <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+         <option value="7">Option 7</option>
+        <option value="8">Option 8</option>
+        <option value="9">Option 9</option>
+        <option value="10+">Option 10</option>
+				</select>	
+
+				<label for="date" class="date-label">Date:</label>
+		<input type="date" name="date" class="date"> to:
+				<input type="date" name="date" class="date">
+				
+				<select class="dropdown" required>
+        <option disable selected value>Status</option>
+        <option value="1">Scheduled</option>
+        <option value="2">Pending Initial Visit</option>
+        <option value="3">Pending Return Visit</option>
+       <option value="4">Guard on Site</option>
+        <option value="5">Night Time Follow Up</option>
+        <option value="6">New</option>
+         <option value="7">Service Completed</option>
+        <option value="8">NTE Increase Needed</option>
+        <option value="9">Waiting on Corporate</option>
+        <option value="10+">Need PO</option>
+				</select>	
+				
+				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				
+				<!-- END FILTERS SECTION-->
+				
+				<!-- Open Calls Table Start -->
+				<div class="line-break"></div>
+				<div class="table-responsive">
+<table class="table">
+   <thead>
+      <tr>
+		  <th scope="col">Client PO#</th>
+         <th scope="col">Location</th>
+         <th scope="col">Service Type</th>
+         <th scope="col">Visit Date</th>
+		<th scope="col">Visit Status</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th scope="row">1</th>
+         <td>Location 1</td>
+         <td>Type 1</td>
+			<td>1/1/21</td>
+			<td>Scheduled</td>
+      </tr>
+      <tr>
+         <th scope="row">2</th>
+         <td>Location 2</td>
+         <td>Type 2</td>
+		  <td>2/1/21</td>
+			<td>Pending Initial Visit</td>
+      </tr>
+      <tr>
+         <th scope="row">3</th>
+         <td>Location 3</td>
+         <td>Type 3</td>
+		  <td>3/1/21</td>
+			<td>Pending Return Visit</td>
+      </tr>
+	   <tr>
+         <th scope="row">4</th>
+         <td>Location 4</td>
+         <td>Type 4</td>
+		   <td>4/1/21</td>
+			<td>Guard on Site</td>
+      </tr>
+	   <tr>
+         <th scope="row">5</th>
+         <td>Location 5</td>
+         <td>Type 5</td>
+		   <td>5/1/21</td>
+			<td>Night Time Follow Up</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+				
+				
+				
+				
+            </div>
+          </div>
+        </div>
+	  </div>
+		</li>
+
+			<!-- Open Calls Table End -->
+<br>			
+			<!-- Closed Calls Table Start -->
+      <li>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             <strong>Closed Calls</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse!" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             				<strong>Filters:</strong> 
+				<br>
+				
+				<label for="search">Client PO#:</label>
+      <input type="search" class="PO" name="search" placeholder="Search PO#">
+				
+		<label for="search" class="location-label">Location:</label>
+      <input type="search" class="search" name="search" placeholder="Search Locations">
+      
+				
+			<select class="dropdown" required>
+        <option disable selected value>Service Type</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+       <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+         <option value="7">Option 7</option>
+        <option value="8">Option 8</option>
+        <option value="9">Option 9</option>
+        <option value="10+">Option 10</option>
+				</select>	
+
+				<label for="date" class="date-label">Date:</label>
+		<input type="date" name="date" class="date"> to:
+				<input type="date" name="date" class="date">
+				
+				<select class="dropdown" required>
+        <option disable selected value>Status</option>
+        <option value="1">Service Completed</option>
+        <option value="2">Closed</option>
+        <option value="3">Invoiced</option>
+				</select>	
+				
+				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				<!-- END FILTERS SECTION-->
+				
+				<!-- Closed Calls Table Start -->
+				<div class="line-break"></div>
+				<div class="table-responsive">
+<table class="table">
+   
+	<thead>
+      <tr>
+		  <th scope="col">Client PO#</th>
+         <th scope="col">Location</th>
+         <th scope="col">Service Type</th>
+         <th scope="col">Visit Date</th>
+		<th scope="col">Visit Status</th>
+		  <th scope="col">Check-In Time</th>
+		  <th scope="col">Check-Out Time</th>
+		  <th scope="col"># of Guards</th>
+      </tr>
+   </thead>
+	
+   <tbody>
+      <tr>
+         <th scope="row">1</th>
+         <td>Location 1</td>
+         <td>Type 1</td>
+			<td>1/1/21</td>
+			<td>Service Completed</td>
+		  <td>1:00 PM</td>
+		  <td>9:00 PM</td>
+		  <td>2</td>
+      </tr>
+      <tr>
+         <th scope="row">2</th>
+         <td>Location 2</td>
+         <td>Type 2</td>
+		  <td>2/1/21</td>
+			<td>Closed</td>
+		  <td>6:00 PM</td>
+		  <td>12:00 AM</td>
+		  <td>4</td>
+      </tr>
+      <tr>
+         <th scope="row">3</th>
+         <td>Location 3</td>
+         <td>Type 3</td>
+		  <td>3/1/21</td>
+			<td>Invoiced</td>
+		  <td>8:00 AM</td>
+		  <td>8:00 PM</td>
+		  <td>10</td>
+      </tr>
+	   <tr>
+         <th scope="row">4</th>
+         <td>Location 4</td>
+         <td>Type 4</td>
+		   <td>4/1/21</td>
+			<td>Service Completed</td>
+		   <td>4:00 AM</td>
+		  <td>11:00 AM</td>
+		  <td>3</td>
+      </tr>
+	   <tr>
+         <th scope="row">5</th>
+         <td>Location 5</td>
+         <td>Type 5</td>
+		   <td>5/1/21</td>
+			<td>Closed</td>
+		   <td>10:00 AM</td>
+		  <td>4:00 PM</td>
+		  <td>1</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+				
+            </div>
+          </div>
+        </div>
+		</li>
+		
+		</ul>
+		
+	
+	
+	
+	</div>
+	<!-- Closed Calls Table End -->
+	
+	<footer id="footer">
+		<strong>Retail Security Services, Inc.</strong>
+	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.net<br>
+<a href="https://retailsecurityservices.net/" id="contact-link">retailsecurityservices.net</a></p>
+	
+	</footer>
+	
+		 </div>
+	</div>
+</body>
+</html>
