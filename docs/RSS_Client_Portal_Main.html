@@ -21,7 +21,14 @@
 	</div>
 	
 	<div class="main">
-		<h1 class="title"><strong>CLIENT PORTAL</strong></h1>
+		<h1 class="title"><strong>CLIENT PORTAL</strong></h1> 
+		
+		<div id="account">
+		<p>Hi, Anthony!</p>
+		<a href="index.html">Sign Out</a>
+		</div>
+		
+		
 		<ul id="accordion">
 
   <li>
@@ -41,16 +48,16 @@
 				<!-- FILTERS SECTION-->
 				
 				<strong>Filters:</strong> 
-				<br>
 				
-				<label for="search">Client PO#:</label>
+				<label for="search" class="label">Client PO#:</label>
       <input type="search" class="PO" name="search" placeholder="Search PO#">
 				
-		<label for="search" class="location-label">Location:</label>
-      <input type="search" class="search" name="search" placeholder="Search Locations">
+		<label for="search" class="label">Location:</label>
+      <input type="search" class="location" name="search" placeholder="Search Locations">
       
 				
-			<select class="dropdown" required>
+			<label for="service-type" class="label">Service Type:</label>
+				<select class="dropdown" name="service-type">
         <option disable selected value>Service Type</option>
         <option value="1">Option 1</option>
         <option value="2">Option 2</option>
@@ -64,27 +71,45 @@
         <option value="10+">Option 10</option>
 				</select>	
 
-				<label for="date" class="date-label">Date:</label>
+				<label for="date" class="label">Date:</label>
 		<input type="date" name="date" class="date"> to:
 				<input type="date" name="date" class="date">
 				
-				<select class="dropdown" required>
-        <option disable selected value>Status</option>
+				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				
+				<br>
+				<br>
+				
+				<!-- Filter Buttons -->
+				
+				<select class="filter-dropdown" id="scheduled">
+					<option disable selected hidden>Scheduled</option>
         <option value="1">Scheduled</option>
         <option value="2">Pending Initial Visit</option>
         <option value="3">Pending Return Visit</option>
        <option value="4">Guard on Site</option>
         <option value="5">Night Time Follow Up</option>
-        <option value="6">New</option>
-         <option value="7">Service Completed</option>
-        <option value="8">NTE Increase Needed</option>
-        <option value="9">Waiting on Corporate</option>
-        <option value="10+">Need PO</option>
+        
 				</select>	
 				
-				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				<select class="filter-dropdown" id="new">
+        <option disable selected value>New</option>
+         <option value="1">New Work Orders</option>
+				</select>
+				
+				<select class="filter-dropdown" id="service-completed">
+        <option disable selected value>Service Completed</option>
+         <option value="1">Vendor Complete</option>
+        <option value="2">Billing Inquiry</option>
+        <option value="3">DNE Confirmed</option>
+        <option value="4">Billing</option>
+				</select>
+				
+				
 				
 				<!-- END FILTERS SECTION-->
+				
+				
 				
 				<!-- Open Calls Table Start -->
 				<div class="line-break"></div>
@@ -96,7 +121,7 @@
          <th scope="col">Location</th>
          <th scope="col">Service Type</th>
          <th scope="col">Visit Date</th>
-		<th scope="col">Visit Status</th>
+		<th scope="col">Status</th>
       </tr>
    </thead>
    <tbody>

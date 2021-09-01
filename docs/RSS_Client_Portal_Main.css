@@ -8,7 +8,9 @@ body{
 	padding: 0;
 	color: black;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-	height: 925px;
+	min-height: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .header{
@@ -32,7 +34,7 @@ body{
 	color: slategray;
 	font-family: tahoma;
 	width: auto;
-
+	display: inline-block;
 }
 
 .main{
@@ -48,12 +50,18 @@ body{
 	box-shadow: 1px 1px 3px black;
 }
 
+#account{
+	float: right;
+	display: inline-block;
+	line-height: 50%;
+}
+
 #accordion{
 	width: auto;
 }
 
 .accordion-body{
-	max-height: 250px;
+	max-height: 300px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -70,6 +78,7 @@ display: none;
 	background-color: slategrey!important;
 	color: white!important;
     border: none!important;
+	height: 75px;
 }
 
 .accordion-header{
@@ -87,13 +96,13 @@ ul {
 	padding: 0px!important;
   }
 
-.location-label{
+.label{
 	margin-left: 5px;
 }
 
-.search{
+.location{
 	max-height: 20px;
-	max-width: 150px;
+	max-width: 135px;
 	display: inline-block;
 	font-size: 9pt;
 }
@@ -141,6 +150,34 @@ ul {
 	color: grey;
 }
 
+.filter-dropdown{
+	width: 32%;
+	 text-align-last:center;
+	color: white;
+	font-weight: 700;
+	border: none;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.filter-dropdown:hover{
+	background-color: slategray!important;
+}
+
+
+#scheduled{
+	background-color: orange;
+}
+
+#new{
+	background-color: darkred;
+}
+
+#service-completed{
+	background-color: darkgreen;
+}
+
+
 .date{
 	max-height: 20px;
 	font-size: 9pt;
@@ -148,21 +185,26 @@ ul {
 	width: 125px;
 }
 
-.date-label{
-	margin-left: 5px;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+	background-color: white;
 }
 
+/*
 #footer{
 	background-color: white;
 	color: #f15a22;
-	width: auto;
 	padding: 5px 5px 1px 5px;
 	text-align: center;
-	position: absolute;
+	position: fixed;
   bottom: 0;
   width: 100%;
   height: auto;  
 }
+*/
 
 #contact-link{
 	color: slategray;
