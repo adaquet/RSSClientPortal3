@@ -61,7 +61,7 @@ body{
 }
 
 .accordion-body{
-	max-height: 300px;
+	max-height: 320px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -138,6 +138,7 @@ ul {
 	padding: 5px 10px 5px 10px;
 }
 
+
 #line-break{
 	border-bottom: 1px solid black;
 	margin-top: 15px;
@@ -151,7 +152,7 @@ ul {
 }
 
 .filter-dropdown{
-	width: 32%;
+	width: 33%;
 	 text-align-last:center;
 	color: white;
 	font-weight: 700;
@@ -185,26 +186,36 @@ ul {
 	width: 125px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-	background-color: white;
+.closed-buttons{
+	width: 49%;
+	 text-align-last:center;
+	color: white;
+	font-weight: 700;
+	border: none;
+	height: 50px;
+	border-radius: 5px;
 }
 
-/*
-#footer{
+.closed-buttons:hover{
+	background-color: slategray!important;
+}
+
+#billed{
+	background-color:indigo;
+}
+
+#invoiced{
+	background-color:steelblue;
+}
+
+footer{
 	background-color: white;
 	color: #f15a22;
-	padding: 5px 5px 1px 5px;
+	position: absolute;
+	width: 100%;
 	text-align: center;
-	position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: auto;  
+	padding: 5px;
 }
-*/
 
 #contact-link{
 	color: slategray;

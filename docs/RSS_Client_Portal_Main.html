@@ -41,7 +41,7 @@
               <strong>Open Calls</strong>
             </button>
           </h2>
-		            <div id="collapseOne" class="accordion-collapse collapse!" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+		            <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 
             <div class="accordion-body">
              
@@ -121,7 +121,7 @@
          <th scope="col">Location</th>
          <th scope="col">Service Type</th>
          <th scope="col">Visit Date</th>
-		<th scope="col">Status</th>
+		<th scope="col">Visit Status</th>
       </tr>
    </thead>
    <tbody>
@@ -186,16 +186,17 @@
           <div id="collapseTwo" class="accordion-collapse collapse!" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
              				<strong>Filters:</strong> 
-				<br>
+				
 				
 				<label for="search">Client PO#:</label>
       <input type="search" class="PO" name="search" placeholder="Search PO#">
 				
 		<label for="search" class="location-label">Location:</label>
-      <input type="search" class="search" name="search" placeholder="Search Locations">
+      <input type="search" class="location" name="search" placeholder="Search Locations">
       
 				
-			<select class="dropdown" required>
+			<label for="service-type" class="label">Service Type:</label>
+				<select class="dropdown" name="service-type">
         <option disable selected value>Service Type</option>
         <option value="1">Option 1</option>
         <option value="2">Option 2</option>
@@ -213,17 +214,28 @@
 		<input type="date" name="date" class="date"> to:
 				<input type="date" name="date" class="date">
 				
-				<select class="dropdown" required>
+				<!-- <select class="dropdown" required>
         <option disable selected value>Status</option>
         <option value="1">Service Completed</option>
         <option value="2">Closed</option>
         <option value="3">Invoiced</option>
-				</select>	
+				</select>	-->
 				
 				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				
+				<!-- Filter Buttons -->
+				<br>
+				<br>
+				
+				<button class="closed-buttons" id="billed">Billed</button>	
+				
+				<button class="closed-buttons" id="invoiced">Invoiced</button>
+				
+					
 				<!-- END FILTERS SECTION-->
 				
 				<!-- Closed Calls Table Start -->
+				
 				<div class="line-break"></div>
 				<div class="table-responsive">
 <table class="table">
@@ -234,7 +246,7 @@
          <th scope="col">Location</th>
          <th scope="col">Service Type</th>
          <th scope="col">Visit Date</th>
-		<th scope="col">Visit Status</th>
+		<th scope="col">Status</th>
 		  <th scope="col">Check-In Time</th>
 		  <th scope="col">Check-Out Time</th>
 		  <th scope="col"># of Guards</th>
@@ -247,7 +259,7 @@
          <td>Location 1</td>
          <td>Type 1</td>
 			<td>1/1/21</td>
-			<td>Service Completed</td>
+			<td>Billed</td>
 		  <td>1:00 PM</td>
 		  <td>9:00 PM</td>
 		  <td>2</td>
@@ -277,7 +289,7 @@
          <td>Location 4</td>
          <td>Type 4</td>
 		   <td>4/1/21</td>
-			<td>Service Completed</td>
+			<td>Billed</td>
 		   <td>4:00 AM</td>
 		  <td>11:00 AM</td>
 		  <td>3</td>
@@ -309,14 +321,15 @@
 	</div>
 	<!-- Closed Calls Table End -->
 	
-	<footer id="footer">
+	
+	
+		 </div>
+	</div>
+	<footer>
 		<strong>Retail Security Services, Inc.</strong>
 	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.net<br>
 <a href="https://retailsecurityservices.net/" id="contact-link">retailsecurityservices.net</a></p>
 	
 	</footer>
-	
-		 </div>
-	</div>
 </body>
 </html>
