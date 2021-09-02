@@ -58,7 +58,7 @@
 				
 			<label for="service-type" class="label">Service Type:</label>
 				<select class="dropdown" name="service-type">
-        <option disable selected value>Service Type</option>
+        <option disable selected value>Service Type</option> 
         <option value="1">Option 1</option>
         <option value="2">Option 2</option>
         <option value="3">Option 3</option>
@@ -83,11 +83,10 @@
 				<!-- Filter Buttons -->
 				
 				<select class="filter-dropdown" id="scheduled">
-					<option disable selected hidden>Scheduled</option>
-        <option value="1">Scheduled</option>
+					<option disable selected value>Scheduled</option> <!-- This option will populate all below options -->
         <option value="2">Pending Initial Visit</option>
         <option value="3">Pending Return Visit</option>
-       <option value="4">Guard on Site</option>
+       <option value="4">Tech on Site</option>
         <option value="5">Night Time Follow Up</option>
         
 				</select>	
@@ -98,11 +97,13 @@
 				</select>
 				
 				<select class="filter-dropdown" id="service-completed">
-        <option disable selected value>Service Completed</option>
+        <option disable selected value>Service Completed</option> <!-- This option will populate all below options -->
          <option value="1">Vendor Complete</option>
         <option value="2">Billing Inquiry</option>
         <option value="3">DNE Confirmed</option>
         <option value="4">Billing</option>
+		<option value="5">Minimum Charge</option>
+		<option value="6">Canceled</option>
 				</select>
 				
 				
