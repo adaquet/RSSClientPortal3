@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>RSS Client Portal</title>
-	<link href="RSS_Client_Portal_Main.css" rel="stylesheet" >
+	<link href="assets/css/RSS_Client_Portal_Main.css" rel="stylesheet" >
 	
 	
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -11,12 +11,13 @@
 </head>
 
 <body>
-	 <div id="page-container">
+<div id="page-container">
 		    <div id="content-wrap">
 
 		 
 <div class="header">
-		<img class="logo" src="Images/RSS- LONG LOGO-WHITE.png" alt="RSS Logo">
+		
+	<img class="logo" src="Images/Rss - LOGO Orange and White.png" alt="RSS Logo">
 	
 	</div>
 	
@@ -54,22 +55,6 @@
 				
 		<label for="search" class="label">Location:</label>
       <input type="search" class="location" name="search" placeholder="Search Locations">
-      
-				
-			<label for="service-type" class="label">Service Type:</label>
-				<select class="dropdown" name="service-type">
-        <option disable selected value>Service Type</option> 
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-       <option value="4">Option 4</option>
-        <option value="5">Option 5</option>
-        <option value="6">Option 6</option>
-         <option value="7">Option 7</option>
-        <option value="8">Option 8</option>
-        <option value="9">Option 9</option>
-        <option value="10+">Option 10</option>
-				</select>	
 
 				<label for="date" class="label">Date:</label>
 		<input type="date" name="date" class="date"> to:
@@ -82,29 +67,11 @@
 				
 				<!-- Filter Buttons -->
 				
-				<select class="filter-dropdown" id="scheduled">
-					<option disable selected value>Scheduled</option> <!-- This option will populate all below options -->
-        <option value="2">Pending Initial Visit</option>
-        <option value="3">Pending Return Visit</option>
-       <option value="4">Tech on Site</option>
-        <option value="5">Night Time Follow Up</option>
-        
-				</select>	
+				<button class="filter-button" id="scheduled">Scheduled</button>	
 				
-				<select class="filter-dropdown" id="new">
-        <option disable selected value>New</option>
-         <option value="1">New Work Order</option>
-				</select>
+				<button class="filter-button" id="new">New</button>
 				
-				<select class="filter-dropdown" id="service-completed">
-        <option disable selected value>Service Completed</option> <!-- This option will populate all below options -->
-         <option value="1">Vendor Complete</option>
-        <option value="2">Billing Inquiry</option>
-        <option value="3">DNE Confirmed</option>
-        <option value="4">Billing</option>
-		<option value="5">Minimum Charge</option>
-		<option value="6">Canceled</option>
-				</select>
+				<button class="filter-button" id="guard-on-site">Guard On Site</button>
 				
 				
 				
@@ -118,48 +85,54 @@
 <table class="table">
    <thead>
       <tr>
-		  <th scope="col">Client PO#</th>
-         <th scope="col">Location</th>
-         <th scope="col">Service Type</th>
-         <th scope="col">Visit Date</th>
-		<th scope="col">Visit Status</th>
+		  <th scope="col">Location Name</th>
+         <th scope="col">City</th>
+         <th scope="col">State</th>
+         <th scope="col">Client PO#</th>
+		<th scope="col">RSS WO#</th>
+		  <th scope="col">Visit Date</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <th scope="row">1</th>
          <td>Location 1</td>
-         <td>Type 1</td>
-			<td>1/1/21</td>
-			<td>Scheduled</td>
+         <td>New York</td>
+         <td>NY</td>
+			<td>123456</td>
+			<td>654654</td>
+		  <td>12/5/21</td>
       </tr>
       <tr>
-         <th scope="row">2</th>
          <td>Location 2</td>
-         <td>Type 2</td>
-		  <td>2/1/21</td>
-			<td>Vendor Complete</td>
+         <td>Chicago</td>
+         <td>IL&nbsp;</td>
+		  <td>789123</td>
+			<td>213132</td>
+		  <td>5/8/21</td>
       </tr>
       <tr>
-         <th scope="row">3</th>
          <td>Location 3</td>
-         <td>Type 3</td>
-		  <td>3/1/21</td>
-			<td>New Work Order</td>
+         <td>Los Angeles</td>
+         <td>CA</td>
+		  <td>456789</td>
+			<td>789456</td>
+		  <td>6/8/21</td>
       </tr>
 	   <tr>
-         <th scope="row">4</th>
          <td>Location 4</td>
-         <td>Type 4</td>
-		   <td>4/1/21</td>
-			<td>Guard on Site</td>
+         <td>Houston</td>
+         <td>TX</td>
+		   <td>654987</td>
+			<td>951159</td>
+		   <td>9/25/21</td>
       </tr>
 	   <tr>
-         <th scope="row">5</th>
          <td>Location 5</td>
-         <td>Type 5</td>
-		   <td>5/1/21</td>
-			<td>Night Time Follow Up</td>
+         <td>St. Louis</td>
+         <td>MO</td>
+		   <td>852963</td>
+			<td>753654</td>
+		   <td>10/18/21</td>
       </tr>
    </tbody>
 </table>
@@ -328,7 +301,7 @@
 	</div>
 	<footer>
 		<strong>Retail Security Services, Inc.</strong>
-	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.net
+	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.com&nbsp; &nbsp;
 		<br>
 <a href="https://retailsecurityservices.net/" id="contact-link">retailsecurityservices.net</a>
 		</p>

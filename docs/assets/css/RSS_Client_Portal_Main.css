@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body{
-	background-color: #f15a22!important;
+	background-color: ghostwhite!important;
 	align-content: center;
 	margin: 0;
 	padding: 0;
@@ -15,9 +15,10 @@ body{
 
 .header{
 	width: auto;
-	height: 100px;
+	height: 125px;
+	background-color: #3c3b3d;
+	margin-bottom: 15px;
 	padding: 20px;
-	align-content: center;
 }
 
 .logo{
@@ -26,8 +27,6 @@ body{
   max-height: 100%;
   max-width: 100%;
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title{
@@ -47,13 +46,14 @@ body{
 	margin-bottom: 25px;
 	padding: 20px;
 	border-radius: 10px;
-	box-shadow: 1px 1px 3px black;
+	box-shadow: 1px 1px 15px black;
 }
 
 #account{
 	float: right;
 	display: inline-block;
 	line-height: 50%;
+	height: auto;
 }
 
 #accordion{
@@ -78,7 +78,7 @@ display: none;
 	background-color: slategrey!important;
 	color: white!important;
     border: none!important;
-	height: 75px;
+	height: 50px;
 }
 
 .accordion-header{
@@ -87,7 +87,6 @@ display: none;
 
   .accordion-button:not(.collapsed){ 
 }
-
 
 
 ul {
@@ -101,17 +100,24 @@ ul {
 }
 
 .location{
-	max-height: 20px;
-	max-width: 135px;
+	max-height: 50px;
+	max-width: 175px;
 	display: inline-block;
-	font-size: 9pt;
+	font-size: 11pt;
 }
 
 .PO{
-	max-height: 20px;
-	max-width: 100px;
+	max-height: 50px;
+	max-width: 125px;
 	display: inline-block;
-	font-size: 9pt;
+	font-size: 11pt;
+}
+
+.date{
+	max-height: 50px;
+	font-size: 11pt;
+	color: grey;
+	width: 150px;
 }
 
 .filter-btn{
@@ -144,14 +150,18 @@ ul {
 	margin-top: 15px;
 }
 
+
+
+/* Open Calls Buttons Start */
+
 .dropdown{
-	max-height: 20px;
+	max-height: 30px;
 	font-size: 9pt;
 	margin-left: 5px;
 	color: grey;
 }
 
-.filter-dropdown{
+.filter-button{
 	width: 33%;
 	 text-align-last:center;
 	color: white;
@@ -161,30 +171,25 @@ ul {
 	border-radius: 5px;
 }
 
-.filter-dropdown:hover{
-	background-color: slategray!important;
+.filter-button:hover{
+	background-color: darkgrey!important;
 }
 
-
 #scheduled{
-	background-color: orange;
+	background-color: darkslateblue;
 }
 
 #new{
-	background-color: darkred;
+	background-color: brown;
 }
 
-#service-completed{
-	background-color: darkgreen;
+#guard-on-site{
+	background-color: darkolivegreen;
 }
 
+/* Open Calls Buttons End */
 
-.date{
-	max-height: 20px;
-	font-size: 9pt;
-	color: grey;
-	width: 125px;
-}
+
 
 .closed-buttons{
 	width: 49%;
@@ -209,7 +214,7 @@ ul {
 }
 
 footer{
-	background-color: white;
+	background-color: #3c3b3d;
 	color: #f15a22;
 	position: absolute;
 	width: 100%;
@@ -218,11 +223,11 @@ footer{
 }
 
 #contact-link{
-	color: slategray;
+	color: white;
 }
 
 #footer-contact{
-	color: slategray;
+	color: white;
 }
 
 #page-container {
