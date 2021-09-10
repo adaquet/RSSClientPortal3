@@ -17,7 +17,7 @@ body{
 	width: auto;
 	height: 125px;
 	background-color: #3c3b3d;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	padding: 15px;
 }
 
@@ -179,15 +179,15 @@ ul {
 	color: slategrey;
 }
 
-#scheduled{
+.scheduled{
 	background-color: #4b6c57;
 }
 
-#new{
+.new{
 	background-color: #b5302b;
 }
 
-#guard-on-site{
+.guard-on-site{
 	background-color: #503431;
 }
 
@@ -210,11 +210,11 @@ ul {
 	color: slategrey;
 }
 
-#billed{
+.billed{
 	background-color: #dbca69;
 }
 
-#invoiced{
+.invoiced{
 	background-color:#55a393;
 }
 
@@ -224,7 +224,7 @@ footer{
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	padding: 15px 0px 5px 0px;
+	padding: 10px 0px 5px 0px;
 }
 
 #contact-link{

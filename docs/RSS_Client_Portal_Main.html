@@ -37,6 +37,8 @@
   <li>
 	  <div class="accordion" id="accordionExample">
         
+		  <!-- OPEN CALLS SECTION START -->
+		  
       <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> 
@@ -48,7 +50,7 @@
 
             <div class="accordion-body">
              
-				<!-- FILTERS SECTION-->
+				<!-- FILTER SECTION-->
 				
 				<strong>Filters:</strong> 
 				
@@ -67,23 +69,24 @@
 				<br>
 				<br>
 				
-				<!-- Filter Buttons -->
-				
-				<button class="filter-button" id="scheduled">SCHEDULED</button>	
-				
-				<button class="filter-button" id="new">NEW</button>
-				
-				<button class="filter-button" id="guard-on-site">GUARD ON SITE</button>
-				
-				
-				
 				<!-- END FILTERS SECTION-->
 				
 				
+				<!-- OPEN CALLS SECTION BUTTONS -->
 				
-				<!-- Open Calls Table Start -->
+				
+				<button class="filter-button showSingle scheduled" id="show1" onclick="show1('Section1');">SCHEDULED</button>	
+				
+				<button class="filter-button new" id="show1" onclick="show1('Section2');">NEW</button>
+				
+				<button class="filter-button guard-on-site" id="show1" onclick="show1('Section3');">GUARD ON SITE</button>
+				
+				
+				
+				<!-- SCHEDULED TABLE START -->
+				
 				<div class="line-break"></div>
-				<div class="table-responsive">
+				<div class="table-responsive targetDiv"  id="Section1" style="display: none;">
 <table class="table">
    <thead>
       <tr>
@@ -91,7 +94,7 @@
          <th scope="col">City</th>
          <th scope="col">State</th>
          <th scope="col">Client PO#</th>
-		<th scope="col">RSS WO#</th>
+		<th scope="col">WO#</th>
 		  <th scope="col">Visit Date</th>
       </tr>
    </thead>
@@ -107,7 +110,7 @@
       <tr>
          <td>Location 2</td>
          <td>Chicago</td>
-         <td>IL&nbsp;</td>
+         <td>IL</td>
 		  <td>789123</td>
 			<td>213132</td>
 		  <td>5/8/21</td>
@@ -139,19 +142,133 @@
    </tbody>
 </table>
 </div>
+	
+			<!-- SCHEDULED TABLE END -->
+			
+				
+			<!-- NEW TABLE START -->
+				
+				<div class="line-break"></div>
+				<div class="table-responsive targetDiv"  id="Section2" style="display: none;">
+<table class="table">
+   <thead>
+      <tr>
+		  <th scope="col">Location Name</th>
+         <th scope="col">City</th>
+         <th scope="col">State</th>
+         <th scope="col">Client PO#</th>
+		<th scope="col">WO#</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Location 6</td>
+         <td>San Franscisco</td>
+         <td>CA</td>
+			<td>984563</td>
+			<td>147523</td>
+      </tr>
+      <tr>
+         <td>Location 7</td>
+         <td>Portland</td>
+         <td>OR</td>
+		  <td>845367</td>
+			<td>987521</td>
+      </tr>
+      <tr>
+         <td>Location 8</td>
+         <td>Providence</td>
+         <td>RI</td>
+		  <td>001247</td>
+			<td>985203</td>
+      </tr>
+	   <tr>
+         <td>Location 9</td>
+         <td>Dallas</td>
+         <td>TX</td>
+		   <td>985032</td>
+			<td>021587</td>
+      </tr>
+	   <tr>
+         <td>Location 10</td>
+         <td>Philadelphia</td>
+         <td>PA</td>
+		   <td>023587</td>
+			<td>903540</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+				<!-- NEW TABLE END -->
 				
 				
+				<!-- GUARD ON SITE TABLE START -->
 				
+				<div class="line-break"></div>
+				<div class="table-responsive targetDiv"  id="Section3" style="display: none;">
+<table class="table">
+   <thead>
+      <tr>
+		  <th scope="col">Location Name</th>
+         <th scope="col">City</th>
+         <th scope="col">State</th>
+         <th scope="col">Client PO#</th>
+		<th scope="col">WO#</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Location 11</td>
+         <td>Medford</td>
+         <td>NY</td>
+			<td>021568</td>
+			<td>952012</td>
+      </tr>
+      <tr>
+         <td>Location 12</td>
+         <td>Orlando</td>
+         <td>FL</td>
+		  <td>032589</td>
+			<td>521011</td>
+      </tr>
+      <tr>
+         <td>Location 13</td>
+         <td>Honolulu</td>
+         <td>HI</td>
+		  <td>546500</td>
+			<td>001240</td>
+      </tr>
+	   <tr>
+         <td>Location 14</td>
+         <td>Syracuse</td>
+         <td>NY</td>
+		   <td>102558</td>
+			<td>024564</td>
+      </tr>
+	   <tr>
+         <td>Location 15</td>
+         <td>Seattle</td>
+         <td>WA</td>
+		   <td>204540</td>
+			<td>450654</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+				
+				<!-- GUARD ON SITE TABLE END -->
 				
             </div>
           </div>
         </div>
 	  </div>
 		</li>
-
-			<!-- Open Calls Table End -->
+			
+			<!-- OPEN CALLS SECTION END -->
+			
 <br>			
-			<!-- Closed Calls Table Start -->
+			
+			<!-- CLOSED CALLS SECTION START -->
       <li>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
@@ -161,112 +278,150 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse!" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
+				
+				<!-- FILTERS START -->
+				
              				<strong>Filters:</strong> 
 				
-				
-				<label for="search">Client PO#:</label>
+				<label for="search" class="label">Client PO#:</label>
       <input type="search" class="PO" name="search" placeholder="Search PO#">
 				
-		<label for="search" class="location-label">Location:</label>
-      <input type="search" class="location" name="search" placeholder="Search Locations">	
+		<label for="search" class="label">Location:</label>
+      <input type="search" class="location" name="search" placeholder="Search Locations">
 
-				<label for="date" class="date-label">Date:</label>
+				<label for="date" class="label">Date:</label>
 		<input type="date" name="date" class="date"> to:
 				<input type="date" name="date" class="date">
 				
-				<!-- <select class="dropdown" required>
-        <option disable selected value>Status</option>
-        <option value="1">Service Completed</option>
-        <option value="2">Closed</option>
-        <option value="3">Invoiced</option>
-				</select>	-->
-				
 				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
 				
-				<!-- Filter Buttons -->
+				<!-- FILTERS END -->
+				
 				<br>
 				<br>
 				
-				<button class="closed-buttons" id="billed">BILLED</button>	
+				<!-- SECTION BUTTONS START -->
 				
-				<button class="closed-buttons" id="invoiced">INVOICED</button>
+		<button class="closed-buttons billed" onclick="show2('Section4');">BILLED</button>	
 				
-					
-				<!-- END FILTERS SECTION-->
+		<button class="closed-buttons invoiced" onclick="show2('Section5');">INVOICED</button>
 				
-				<!-- Closed Calls Table Start -->
+				
+				<!-- SECTION BUTTONS END -->
+				
+				
+				<!-- BILLED TABLE START -->
 				
 				<div class="line-break"></div>
-				<div class="table-responsive">
+				<div class="table-responsive targetDiv"  id="Section4" style="display: none;">
 <table class="table">
-   
-	<thead>
+   <thead>
       <tr>
-		  <th scope="col">Client PO#</th>
-         <th scope="col">Location</th>
-         <th scope="col">Service Type</th>
-         <th scope="col">Visit Date</th>
-		<th scope="col">Status</th>
-		  <th scope="col">Check-In Time</th>
-		  <th scope="col">Check-Out Time</th>
-		  <th scope="col"># of Guards</th>
+		  <th scope="col">Location Name</th>
+         <th scope="col">City</th>
+         <th scope="col">State</th>
+         <th scope="col">Client PO#</th>
+		<th scope="col">WO#</th>
       </tr>
    </thead>
-	
    <tbody>
       <tr>
-         <th scope="row">1</th>
-         <td>Location 1</td>
-         <td>Type 1</td>
-			<td>1/1/21</td>
-			<td>Billed</td>
-		  <td>1:00 PM</td>
-		  <td>9:00 PM</td>
-		  <td>2</td>
+         <td>Location 16</td>
+         <td>Montauk</td>
+         <td>NY</td>
+			<td>541004</td>
+			<td>456044</td>
       </tr>
       <tr>
-         <th scope="row">2</th>
-         <td>Location 2</td>
-         <td>Type 2</td>
-		  <td>2/1/21</td>
-			<td>Closed</td>
-		  <td>6:00 PM</td>
-		  <td>12:00 AM</td>
-		  <td>4</td>
+         <td>Location 17</td>
+         <td>Sacramento</td>
+         <td>CA</td>
+		  <td>546500</td>
+			<td>004884</td>
       </tr>
       <tr>
-         <th scope="row">3</th>
-         <td>Location 3</td>
-         <td>Type 3</td>
-		  <td>3/1/21</td>
-			<td>Invoiced</td>
-		  <td>8:00 AM</td>
-		  <td>8:00 PM</td>
-		  <td>10</td>
+         <td>Location 18</td>
+         <td>Austin</td>
+         <td>TX</td>
+		  <td>050140</td>
+			<td>555555</td>
       </tr>
 	   <tr>
-         <th scope="row">4</th>
-         <td>Location 4</td>
-         <td>Type 4</td>
-		   <td>4/1/21</td>
-			<td>Billed</td>
-		   <td>4:00 AM</td>
-		  <td>11:00 AM</td>
-		  <td>3</td>
+         <td>Location 19</td>
+         <td>Denver</td>
+         <td>CO</td>
+		   <td>206988</td>
+			<td>989999</td>
       </tr>
 	   <tr>
-         <th scope="row">5</th>
-         <td>Location 5</td>
-         <td>Type 5</td>
-		   <td>5/1/21</td>
-			<td>Closed</td>
-		   <td>10:00 AM</td>
-		  <td>4:00 PM</td>
-		  <td>1</td>
+         <td>Location 20</td>
+         <td>Boston</td>
+         <td>MA</td>
+		   <td>002233</td>
+			<td>112244</td>
       </tr>
    </tbody>
 </table>
 </div>
+				
+				<!-- BILLED TABLE END -->
+				
+				
+				<!-- INVOICED TABLE START -->
+				
+				<div class="line-break"></div>
+				<div class="table-responsive targetDiv" id="Section5" style="display: none;">
+<table class="table">
+   <thead>
+      <tr>
+		  <th scope="col">Location Name</th>
+         <th scope="col">City</th>
+         <th scope="col">State</th>
+         <th scope="col">Client PO#</th>
+		<th scope="col">WO#</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Location 21</td>
+         <td>San Diego</td>
+         <td>CA</td>
+			<td>998877</td>
+			<td>663322</td>
+      </tr>
+      <tr>
+         <td>Location 22</td>
+         <td>Nashville</td>
+         <td>TN</td>
+		  <td>665444</td>
+			<td>663324</td>
+      </tr>
+      <tr>
+         <td>Location 23</td>
+         <td>Las Vegas</td>
+         <td>NV</td>
+		  <td>605040</td>
+			<td>101020</td>
+      </tr>
+	   <tr>
+         <td>Location 24</td>
+         <td>Albany</td>
+         <td>NY</td>
+		   <td>604478</td>
+			<td>998876</td>
+      </tr>
+	   <tr>
+         <td>Location 25</td>
+         <td>Raleigh</td>
+         <td>NC</td>
+		   <td>102514</td>
+			<td>423032</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+				<!-- INVOICED TABLE END -->
+				
 				
             </div>
           </div>
@@ -274,22 +429,31 @@
 		</li>
 		
 		</ul>
-		
-	
-	
+
 	
 	</div>
-	<!-- Closed Calls Table End -->
+	
+	<!-- CLOSED CALLS TABLE END -->
 	
 	
+	<!-- FOOTER START -->
 	
 	<footer class="bg-dark">
 		<strong>Retail Security Services, Inc.</strong>
-	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.com&nbsp; &nbsp;
+	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.com
 		<br>
 <a href="https://retailsecurityservices.net/" id="contact-link">retailsecurityservices.net</a>
 		</p>
-	
 	</footer>
+	
+	<!-- FOOTER END -->
+	
 </body>
+	<script src="assets/js/myscripts2.js"></script>
+		<script src="assets/js/myscripts.js"></script>
+	
+	
+
+	
 </html>
+
