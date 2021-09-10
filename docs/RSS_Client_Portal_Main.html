@@ -11,23 +11,25 @@
 </head>
 
 <body>
-<div id="page-container">
-		    <div id="content-wrap">
-
-		 
-<div class="header">
-		
-	<img class="logo" src="Images/Rss - LOGO Orange and White.png" alt="RSS Logo">
 	
-	</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="Images/logo.svg" alt="" width="350" height="auto">
+    </a>
+	  
+	  <div id="account">
+		<p>Hi, Anthony!</p>
+		<a href="index.html">Sign Out</a>
+		</div>
+  </div>
+</nav>
+
 	
 	<div class="main">
 		<h1 class="title"><strong>CLIENT PORTAL</strong></h1> 
 		
-		<div id="account">
-		<p>Hi, Anthony!</p>
-		<a href="index.html">Sign Out</a>
-		</div>
+		
 		
 		
 		<ul id="accordion">
@@ -39,7 +41,7 @@
           <h2 class="accordion-header" id="headingOne">
            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> 
 
-              <strong>Open Calls</strong>
+              <strong>OPEN CALLS</strong>
             </button>
           </h2>
 		            <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -67,11 +69,11 @@
 				
 				<!-- Filter Buttons -->
 				
-				<button class="filter-button" id="scheduled">Scheduled</button>	
+				<button class="filter-button" id="scheduled">SCHEDULED</button>	
 				
-				<button class="filter-button" id="new">New</button>
+				<button class="filter-button" id="new">NEW</button>
 				
-				<button class="filter-button" id="guard-on-site">Guard On Site</button>
+				<button class="filter-button" id="guard-on-site">GUARD ON SITE</button>
 				
 				
 				
@@ -154,7 +156,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-             <strong>Closed Calls</strong>
+             <strong>CLOSED CALLS</strong>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse!" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -166,23 +168,7 @@
       <input type="search" class="PO" name="search" placeholder="Search PO#">
 				
 		<label for="search" class="location-label">Location:</label>
-      <input type="search" class="location" name="search" placeholder="Search Locations">
-      
-				
-			<label for="service-type" class="label">Service Type:</label>
-				<select class="dropdown" name="service-type">
-        <option disable selected value>Service Type</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-       <option value="4">Option 4</option>
-        <option value="5">Option 5</option>
-        <option value="6">Option 6</option>
-         <option value="7">Option 7</option>
-        <option value="8">Option 8</option>
-        <option value="9">Option 9</option>
-        <option value="10+">Option 10</option>
-				</select>	
+      <input type="search" class="location" name="search" placeholder="Search Locations">	
 
 				<label for="date" class="date-label">Date:</label>
 		<input type="date" name="date" class="date"> to:
@@ -201,9 +187,9 @@
 				<br>
 				<br>
 				
-				<button class="closed-buttons" id="billed">Billed</button>	
+				<button class="closed-buttons" id="billed">BILLED</button>	
 				
-				<button class="closed-buttons" id="invoiced">Invoiced</button>
+				<button class="closed-buttons" id="invoiced">INVOICED</button>
 				
 					
 				<!-- END FILTERS SECTION-->
@@ -297,9 +283,7 @@
 	
 	
 	
-		 </div>
-	</div>
-	<footer>
+	<footer class="bg-dark">
 		<strong>Retail Security Services, Inc.</strong>
 	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.com&nbsp; &nbsp;
 		<br>

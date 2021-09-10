@@ -13,12 +13,12 @@ body{
 	position: relative;
 }
 
-.header{
+.navbar{
 	width: auto;
 	height: 125px;
 	background-color: #3c3b3d;
 	margin-bottom: 15px;
-	padding: 20px;
+	padding: 15px;
 }
 
 .logo{
@@ -50,6 +50,7 @@ body{
 }
 
 #account{
+	color: white;
 	float: right;
 	display: inline-block;
 	line-height: 50%;
@@ -121,20 +122,8 @@ ul {
 }
 
 .filter-btn{
-	height: 25px;
-	font-size: 8pt;
-	display: inline-block;
-	background-color: #f15a22;
-	border: none;
-	border-radius: 20px;
-	color: white;
-	margin-left: 5px;
-	padding: 5px 10px 5px 10px;
-}
-
-.filter-btn:hover{
-	height: 25px;
-	font-size: 8pt;
+	height: 35px;
+	font-size: 10pt;
 	display: inline-block;
 	background-color: slategray;
 	border: none;
@@ -142,6 +131,20 @@ ul {
 	color: white;
 	margin-left: 5px;
 	padding: 5px 10px 5px 10px;
+	font-weight: 500;
+}
+
+.filter-btn:hover{
+	height: 35px;
+	font-size: 10pt;
+	display: inline-block;
+	background-color: lightgrey;
+	border: none;
+	border-radius: 20px;
+	color: slategrey;
+	margin-left: 5px;
+	padding: 5px 10px 5px 10px;
+	font-weight: 500;
 }
 
 
@@ -172,19 +175,20 @@ ul {
 }
 
 .filter-button:hover{
-	background-color: darkgrey!important;
+	background-color: lightgrey!important;
+	color: slategrey;
 }
 
 #scheduled{
-	background-color: darkslateblue;
+	background-color: #4b6c57;
 }
 
 #new{
-	background-color: brown;
+	background-color: #b5302b;
 }
 
 #guard-on-site{
-	background-color: darkolivegreen;
+	background-color: #503431;
 }
 
 /* Open Calls Buttons End */
@@ -202,15 +206,16 @@ ul {
 }
 
 .closed-buttons:hover{
-	background-color: slategray!important;
+	background-color: lightgrey!important;
+	color: slategrey;
 }
 
 #billed{
-	background-color:indigo;
+	background-color: #dbca69;
 }
 
 #invoiced{
-	background-color:steelblue;
+	background-color:#55a393;
 }
 
 footer{
@@ -219,7 +224,7 @@ footer{
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	padding: 5px;
+	padding: 15px 0px 5px 0px;
 }
 
 #contact-link{
