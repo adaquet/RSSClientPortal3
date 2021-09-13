@@ -5,7 +5,8 @@
 <title>RSS Client Portal</title>
 	<link href="assets/css/RSS_Client_Portal_Main.css" rel="stylesheet" >
 	
-	
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
@@ -119,6 +120,14 @@
 			<td>123456</td>
 			<td>654654</td>
 		  <td>12/5/21</td>
+        <td><button type="button" 
+         class="btn btn-lg btn-danger btnPopover" 
+         data-toggle="popover" title="Popover title" 
+         data-content="1/21/21 2/2/21"
+         data-trigger="hover" id="btnPopover"
+       >+</button></td>
+
+   </tr>
       </tr>
       <tr>
          <td>Location 2</td>
@@ -127,6 +136,15 @@
 		  <td>789123</td>
 			<td>213132</td>
 		  <td>5/8/21</td>
+        <td><button type="button" 
+         class="btn btn-lg btn-danger btnPopover" 
+         data-toggle="popover" title="Popover title" 
+         data-content="And here's some amazing content. 
+         It's very engaging. Right?"
+         data-trigger="hover" id="btnPopover"
+       >+</button></td>
+
+   </tr>
       </tr>
       <tr>
          <td>Location 3</td>
@@ -135,6 +153,15 @@
 		  <td>456789</td>
 			<td>789456</td>
 		  <td>6/8/21</td>
+        <td><button type="button" 
+         class="btn btn-lg btn-danger btnPopover" 
+         data-toggle="popover" title="Popover title" 
+         data-content="And here's some amazing content. 
+         It's very engaging. Right?"
+         data-trigger="hover" id="btnPopover"
+       >+</button></td>
+
+   </tr>
       </tr>
 	   <tr>
          <td>Location 4</td>
@@ -143,6 +170,15 @@
 		   <td>654987</td>
 			<td>951159</td>
 		   <td>9/25/21</td>
+         <td><button type="button" 
+            class="btn btn-lg btn-danger btnPopover" 
+            data-toggle="popover" title="Popover title" 
+            data-content="And here's some amazing content. 
+            It's very engaging. Right?"
+            data-trigger="hover" id="btnPopover"
+          >+</button></td>
+
+      </tr>
       </tr>
 	   <tr>
          <td>Location 5</td>
@@ -151,6 +187,14 @@
 		   <td>852963</td>
 			<td>753654</td>
 		   <td>10/18/21</td>
+         <td><button type="button" 
+            class="btn btn-lg btn-danger btnPopover" 
+            data-toggle="popover" title="Popover title" 
+            data-content="And here's some amazing content. 
+            It's very engaging. Right?"
+            data-trigger="hover" id="btnPopover"
+          >+</button></td>
+
       </tr>
    </tbody>
 </table>
@@ -365,6 +409,7 @@
          <td>CO</td>
 		   <td>206988</td>
 			<td>989999</td>
+
       </tr>
 	   <tr>
          <td>Location 20</td>
@@ -372,6 +417,7 @@
          <td>MA</td>
 		   <td>002233</td>
 			<td>112244</td>
+         </td>
       </tr>
    </tbody>
 </table>
@@ -451,7 +497,14 @@
 
 
 	
-	
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.btnPopover').popover();
+});
+</script>
+
 	<!-- FOOTER START -->
 	
 	<footer class="bg-dark fixed-bottom">
@@ -463,11 +516,11 @@
 	</footer>
 	
 	<!-- FOOTER END -->
-	
+ 
 </body>
 	<script src="assets/js/myscripts2.js"></script>
 		<script src="assets/js/myscripts.js"></script>
-	
+   
 	
 
 	
