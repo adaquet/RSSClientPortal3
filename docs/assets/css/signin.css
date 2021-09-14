@@ -1,3 +1,40 @@
+/* Cursor */
+.cursor{
+position: absolute;
+left:0;
+top:0;
+border: 10px solid orangered;
+width: 20px;
+height:20px;
+border-radius: 50px;
+
+
+}
+
+
+
+/* White Noise */
+
+
+
+.section2{
+  position:absolute;
+  top:-50px;
+  left:0;
+  width:(100% + 50px);
+  height:(100% + 50px);
+  opacity: 0.2;
+  background:repeating-linear-gradient(#111,#111 50%, #fff 50%, #fff);
+  background-size:5px 5px;
+  filter: url(#noise);
+ 
+}
+
+svg
+{
+ width:0;
+ height:0;
+}
 /* Button Styles */
 
 .buttontwo, .buttontwo::after {

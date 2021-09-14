@@ -7,13 +7,25 @@
 	<link href="assets/css/signin.css" rel="stylesheet">
 </head>
 
-<body>
-	<img class="logo" src="Images/logoBlack.svg" alt="RSS Logo">
+<body >
+  <div class=""></div>
+  <div class="cursor" style="z-index:100000"></div>
+<div class="section2 " style="height:100vh;width:100vw; z-index:2; position:absolute"></div>
+  <svg>
+    <filter id="noise">
+      <feTurbulence id="turbulence">
+        <animate attributeName="baseFrequency" dur="150s" values="0.9 0.9;0.8 0.8;0.9 0.9;" repeatCount="indefinite"></animate>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+    </filter>
+  </svg>
+  <div class="container">
+  <div style="position:absolute;z-index:2000!important; padding-left:35vw" class="row justify-content-start">
+	<img class="logo" src="Images/rss_logo.svg" alt="RSS Logo">
 	<h1 class="header">CLIENT PORTAL</h1>
 	
 	 <form class="login" style="padding: .25em 4em 2em 4em">
 		   
-    <!-- <img style="margin-left:-4em" class="" src="../../../static/docs/5.1/assets/brand/rss_logo.svg" alt="Retail Security Services Logo" width="400vw" height="auto"> -->
     <h1>WELCOME!<br>
 PLEASE SIGN IN.</h1>
 
@@ -44,7 +56,9 @@ PLEASE SIGN IN.</h1>
   <span>Lost Password</span>
 
   </form>
-
-	
+</div>
+</div>
+</div>
+	<script src="./assets/js/myscripts2.js"></script>
 </body>
 </html>
