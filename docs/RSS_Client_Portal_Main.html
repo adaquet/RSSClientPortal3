@@ -26,7 +26,11 @@
 </nav>
 <div style="z-index:100000!important;position:absolute;margin-left:80vw;margin-top: 40vh;">
    <div class="item" style="width:19vw">
-     <div class="polaroid">  <img src="Images/motivational.jpg" alt="RSS Motivational Quote" loading="lazy">
+     <div class="polaroid">  
+   </script>
+   <script type = "text/javascript">
+   document.write("<img src = \"images/motivational/" + Math.floor( 1 + Math.random() * 20 ) + ".jpg\" />");
+   </script>
       
        <div class="caption">Retail Security Services</div>
        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://retailsecurityservices.com&amp;title=The title of the page or post&amp;summary=&amp;source=Siam-Communications" target="_new" rel="noopener noreferrer">
@@ -189,7 +193,8 @@
             data-toggle="popover" 
             title="Popover title" 
             data-content="And here's some amazing content. 
-            It's very engaging. Right?">+</button>
+            It's very engaging. Right?"
+            data-trigger="focus">+</button>
        
          </td>
       </tr>
@@ -512,6 +517,8 @@
       $(".btnPopover").popover();
    });
 
+
+   
    </script>
 </body>
 	<script src="assets/js/myscripts2.js"></script>
