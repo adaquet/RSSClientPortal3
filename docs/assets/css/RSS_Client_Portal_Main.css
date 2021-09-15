@@ -376,6 +376,7 @@ div {
    
     position: relative;
     z-index: 1000000!important;
+	background-color: rgb(230, 182, 190)!important;
 }
 
 /* media queries */
@@ -384,7 +385,14 @@ div {
 		display:none;
 		
 	}
-
+	.hide{
+		display:none;
+		
+	}
+	.theDiv{
+		display:none;
+		
+	}
 	.accordion-body {
 		max-height: 45%; 
 		overflow-x: hidden;

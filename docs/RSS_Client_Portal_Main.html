@@ -31,7 +31,7 @@
  
    <div class="close" id="thediv">
    <div class="item" style="width:19vw">
-      <div style="" type="button" onclick="Delete(this)")><i class="fas fa-times"></i>_close</div>
+      <div  type="button" onclick="Delete(this)") class="hide"><i class="fas fa-times"></i>_close</div>
      <div class="polaroid shareImage">  
    </script>
    <script type = "text/javascript">
@@ -92,17 +92,17 @@
 				
 				<strong>Filters:</strong> 
 				
-				<label for="search" class="label">Client PO#:</label>
+				<label for="search" class="label" style="margin-top:1em">Client PO#:</label>
       <input type="search" class="PO" name="search" placeholder="Search PO#">
 				
-		<label for="search" class="label">Location:</label>
+		<label for="search" class="label" style="margin-top:1em">Location:</label>
       <input type="search" class="location" name="search" placeholder="Search Locations">
 
-				<label for="date" class="label">Date:</label>
+				<label for="date" class="label"style="margin-top:1em">Date:</label>
 		<input type="date" name="date" class="date"> to:
 				<input type="date" name="date" class="date">
 				
-				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn" style="margin-top:1em">
 				
 				<br>
 				<br>
@@ -146,9 +146,15 @@
 			<td>123456</td>
 			<td>654654</td>
 		  <td>12/5/21 </td>
-        <td><button    class="btn btn-sm btn-danger btnPopover"   href="#" id="example" rel="popover" data-content="" data-original-title="A Title"> 
-       +</button><div id="popover_content_wrapper" style="display: none">
-         <div>More Visit Dates
+        <td><a   class="btn btn-sm btn-danger btnPopover"
+         data-trigger="focus"   
+      id="example" rel="popover" 
+         data-toggle="popover" 
+         role="button"
+         data-content="" data-original-title="A Title"> 
+       +</a><div id="popover_content_wrapper" 
+       style="display: none; background-color: lightblue;">
+         <div style="background:grey!important">More Visit Dates
             <div style="width:5em">
             02/22/21<br/>
             05/22/21<br/>
@@ -352,17 +358,17 @@
 				
              				<strong>Filters:</strong> 
 				
-				<label for="search" class="label">Client PO#:</label>
+				<label for="search" class="label" style="margin-top:1em">Client PO#:</label>
       <input type="search" class="PO" name="search" placeholder="Search PO#">
 				
-		<label for="search" class="label">Location:</label>
+		<label for="search" class="label" style="margin-top:1em">Location:</label>
       <input type="search" class="location" name="search" placeholder="Search Locations">
 
-				<label for="date" class="label">Date:</label>
+				<label for="date" class="label" style="margin-top:1em">Date:</label>
 		<input type="date" name="date" class="date"> to:
 				<input type="date" name="date" class="date">
 				
-				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn">
+				<input type="submit" name="submit" value="APPLY FILTERS" class="filter-btn" style="margin-top:1em">
 				
 				<!-- FILTERS END -->
 				
@@ -538,7 +544,10 @@
           }
         });
       });
-    </script>
+
+</script>
+
+  
 
 
 </body>

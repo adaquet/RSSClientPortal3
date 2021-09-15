@@ -7,8 +7,8 @@ border: 3px solid orangered;
 width: 20px;
 height:20px;
 border-radius: 50px;
-
-
+background: url(images/lock2.svg);
+background-size: 100px 82px;
 }
 
 
@@ -133,5 +133,9 @@ svg
 }
 .login{
   font-size:2em;
+}
+input {
+
+  font-size: 1em;
 }
 }
