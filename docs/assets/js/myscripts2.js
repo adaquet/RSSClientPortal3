@@ -1,11 +1,3 @@
-// hide show div button functions
-const cursor = document.querySelector('.cursor');
-window.addEventListener('mousemove', (e) =>{
-   cursor.style.left = e.pageX + 'px';
-   cursor.style.top = e.pageY + 'px';
-   consoler.log(e.pageX, e.pageY) 
-})
-
 
 var divs2 = ["Section4", "Section5"];
 var visibleId2 = null;
@@ -28,4 +20,19 @@ div.style.display = "none";
 }
 } 
 
+// script to close motivational image
+function Delete(div)
+{
+  var parent = div.parentNode;
+  var grand_father = parent.parentNode;
+  grand_father.removeChild(parent);
+}
 
+
+// hide show div button functions
+const cursor = document.querySelector('.cursor');
+window.addEventListener('mousemove', (e) =>{
+   cursor.style.left = e.pageX + 'px';
+   cursor.style.top = e.pageY + 'px';
+   consoler.log(e.pageX, e.pageY) 
+})
