@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>RSS Client Portal</title>
 	<link href="assets/css/RSS_Client_Portal_Main.css" rel="stylesheet" >
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
    <script src="https://unpkg.com/@popperjs/core@2"></script>
    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
@@ -29,22 +29,33 @@
 </nav>
 <div style="z-index:100000!important;position:absolute;margin-top: 40vh;">
    <div class="item" style="width:19vw">
-     <div class="polaroid">  
+     <div class="polaroid shareImage">  
    </script>
    <script type = "text/javascript">
-   document.write("<img src = \"images/motivational/" + Math.floor( 1 + Math.random() * 20 ) + ".jpg\" />");
+   document.write("<img  src = \"images/motivational/" + Math.floor( 1 + Math.random() * 20 ) + ".jpg\" ) />");
    </script>
       
        <div class="caption">Retail Security Services</div>
-       <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://retailsecurityservices.com&amp;title=The title of the page or post&amp;summary=&amp;source=Siam-Communications" target="_new" rel="noopener noreferrer">
-         <img title="linkedin sharing button"  style=" width:80px; height:auto"  src="Images/linkedin.png" alt="linkedin sharing button" />
-         </a>
+   <div >Share this image
+<a href="#" class="facebook-btn"></a>
+<i style="font-size:2em;color:#3b5998" class="fab fa-facebook-square"></i>
+
+<a href="#"class="twitter-btn"></a>
+<i style="font-size:2em;color:#1da1f2" class ="fab fa-twitter-square "></i>
+
+<a href="#" class="instagram-btn"></a>
+<i style="font-size:2em;color:#e1306c" class ="fab fa-instagram-square"></i>
+
+<a href="#" class="linkedin"></a>
+<i style="font-size:2em;color:#0077b5" class ="fab fa-linkedin"></i>
+
+   </div>
      </div>
  
    </div>
  </div>
 	
-	<div class="main" style="z-index: 2000!important">
+	<div class="main" style="z-index: 10001!important;position:relative">
       
 		
 		<h1 class="title"><strong>CLIENT PORTAL</strong></h1> 
@@ -61,7 +72,10 @@
 		  
       <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> 
+           <button class="accordion-button collapsed" 
+           type="button" data-bs-toggle="collapse" 
+           data-bs-target="#collapseOne" 
+           aria-expanded="false" aria-controls="collapseOne"> 
 
               <strong>OPEN CALLS</strong>
             </button>
@@ -493,11 +507,18 @@
 	<!-- FOOTER START -->
 	
 	<footer class="bg-dark fixed-bottom">
-		<strong>Retail Security Services, Inc.</strong>
-	<p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.com
-		<br>
-<a href="https://retailsecurityservices.net/" id="contact-link">retailsecurityservices.net</a>
-		</p>
+		<div class="row">
+         <div class="col-sm"></div>
+         <div class="col-sm"><strong>Retail Security Services, Inc.</strong>
+            <p id="footer-contact">(631) 346-3570 • info@retailsecurityservices.com
+               <br>
+         <a href="https://retailsecurityservices.net/" id="contact-link">retailsecurityservices.net</a>
+               </p></div>
+         <a class="col-sm" href="https://search.google.com/local/writereview?placeid=ChIJ0QAJJnlG6IkR7ugj5wYec8s"> 
+            Leave Us A Google Review!
+            <div style="color:white"><i class="fas fa-star" style="padding:9px"></i><i class="fas fa-star" style="padding:9px"></i><i class="fas fa-star" style="padding:9px"></i><i class="fas fa-star"style="padding:9px"></i><i class="fas fa-star" style="padding:9px"></i></div></a>
+
+      </div>
 	</footer>
 	
 	<!-- FOOTER END -->
@@ -515,32 +536,7 @@
       });
     </script>
 
- <!-- <script>
-  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-   </script> -->
 
-   <!-- <script>
-         
-      $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();
-      });
-      </script> -->
-
-   
-   </script>
-   </script>
-
-   <!-- <script>
-      $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();
-      });
-      </script>
-
-   
-   </script> -->
 </body>
 
 	<script src="assets/js/myscripts2.js"></script>
