@@ -406,3 +406,14 @@ div {
 	
 	}
 }
+#button2 {
+	
+	color: rgb(5, 5, 5);
+	
+  }
+
+  @media screen and (min-width: 676px) {
+	.modal-dialog {
+	  max-width: 55vw!important; /* New width for default modal */
+	}
+}
