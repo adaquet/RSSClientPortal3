@@ -65,8 +65,3 @@ input{
 	margin: 10px;
 }
 
-@media screen and (min-width: 676px) {
-	.modal-dialog {
-	  max-width: 80vw!important; /* New width for default modal */
-	}
-}

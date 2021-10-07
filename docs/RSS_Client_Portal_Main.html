@@ -649,8 +649,12 @@
 
 
       $(document).on('click', "#button2", function() {
-    $('#changeProfileModal').modal('show');
-  });
+         $('#changeProfileModal').modal('show');
+      });
+
+      $('[data-dismiss="modal"]').click(function(){
+         $('.modal').modal('hide');
+      });
 
 
 		// $('body').on('click', function (e) {
